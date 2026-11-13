@@ -1,0 +1,1372 @@
+@import url('global.css');
+@import url('index.css');
+aside{
+    position: fixed;
+    padding-top: 11dvh;
+    padding-bottom: 14dvh;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 3.2rem;
+    border-right: 1px solid black; 
+    background-color: var(--Substitute);
+    transition: width 0.3s ease;
+    flex-grow: 1;
+}
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+aside ul li p {
+    display: none;
+    transition: opacity 0.2s ease;
+}
+aside ul li {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin: 0.5rem 0;
+}
+aside ul li a {
+    display: block;
+    display: flex;
+    padding: 0.75rem 1rem;
+    background-color: #fff;
+    color: #333;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.5s, color 0.3s;
+}
+aside ul li a i{
+    display:flex;
+    justify-self: flex-start;
+    margin-right: 2rem;
+}
+aside ul li a:hover {
+    background-color: #ff6600;
+    color: #fff;
+}
+#outblock{
+    display: flex;
+    margin-top: auto;
+    align-items: flex-end;
+}
+#home #outblock{
+    margin-top: 7rem;
+}
+#home aside{
+    position: none;
+    max-height: 80vh;
+    display: flex;
+    margin: auto 0;
+}
+/*Feedback Page*/
+.FeedbackSection .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
+}
+.FeedbackSection .container .feedbackCard{
+    width: 60%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 9px;
+    background-color: var(--Substitute);
+}
+.fdInput{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+}
+.fdInput button, .fdInput input{
+    width: 9rem;
+    height: 2rem;
+    margin: 0.6rem 0;
+    border-radius: 6px;
+    border-width: 1px;
+    background-color: white;
+    font-weight: 600;
+}
+.ratestar{
+    display: flex;
+    flex-direction: column;
+}
+#fbStore{
+    display: flex;
+    gap: 1rem;
+}
+.fdInput a input:hover, .fdInput button:hover{
+    background-color: var(--Main);
+    font-size: 1.3rem;
+}
+.fdInput textarea{
+    height: 8rem;
+    width: 92%;
+    font-size: 1.3rem;
+    border-radius: 7px;
+    border-width: 1px;
+}
+.fdInput textarea::placeholder{
+    font-size: 1rem;
+}
+.fdInput textarea::-webkit-scrollbar{
+    display: none;
+}
+/*Profile Page*/
+.SettingContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    height: 4rem;
+    width: 100%;
+    border: 2px solid black;
+}
+.clientHeader .container form{
+    border: 0px solid purple;
+    display: flex;
+    height: 100%;
+    margin: 0rem auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+}
+.clientHeader .container form input{
+    height: 2.5rem;
+    width: 70%;
+    outline: none;
+    border: 1px solid black;
+}
+.clientHeader .container form button{
+    width : 20%;
+    height: 2.5rem;
+    border-radius: 9px;
+    outline: none;
+    border: 1px solid black;
+}
+.clientHeader .container form button i{
+    color: black;
+}
+.clientHeader .container form button:hover{
+    background-color: white;
+}
+.clientHeader .container .Logo{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 0;
+}
+.LevelStats {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: auto;
+}
+.LevelStats progress{
+    margin: 0 2.5rem;
+}
+.Profile_Wrap .container{
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+}
+.BioContainer{
+    width: 40%;
+    height: 100%;
+}
+.ProgressContainer{
+    width: 55%;
+    height: 100%;
+}
+.BioCard #userNameWrap{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    border: 0px solid black;
+    align-items: center;
+}
+.BioCard #userNameWrap i{
+    font-size: 1.26rem;
+    color: var(--Main);
+}
+.atUsername{
+    font-size: 1.7rem;
+    font-weight: 600;   
+}
+.pfInfo{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.SettingLast{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.Tabs_Option{
+    display: flex;
+    width: auto;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.Setting{
+    width: 15%;
+    text-align: right;
+}
+.SettingLast .Setting i{
+    font-size: 1.5rem;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.Setting i.fa-share-from-square,
+.Setting i.fa-check {
+    transition: all 0.3s ease; /* Smooth transition */
+}
+.Setting i.fa-check {
+    color: green;
+    transform: scale(1.2); /* Optional "pop" effect */
+}
+.BioContainer .pfpBox{
+    height: 30%;
+    width: 40%;
+    margin: 0.5rem auto;
+}
+.BioContainer .pfpBox img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    place-items: center;
+    display: flex;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+.AboutUserContainer{
+    width: 100%;
+}
+.ClashedDIV{
+    display: flex;
+    height: auto;
+}
+.BioStatement{
+    margin: 1rem auto;
+    word-wrap: wrap;
+    padding: 0 0.5rem;
+}
+.FollowContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0.5rem auto;
+    padding: 0 0.5rem;
+}
+.FollowCard b{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+}
+.FollowCard p{
+    font-size: 1rem;
+}
+.FollowCard b{
+    font-size: 1.3rem;
+}
+.btnTrack{
+    height: 15%;
+}
+.btnTrack button{
+    border-width: 1px;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    outline: none;
+    align-items: center;
+    margin: 0.5rem auto;
+    display: flex;
+    justify-content: center;
+    height: 50%;
+    width: 60%;
+}
+.loadbutton{
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+}
+.loadbutton:hover{
+    background-color: white;
+    font-size: 1.2rem;
+}
+
+.progressday{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.progressday .streakday h3{
+    display: flex;
+}
+.progressday .Reward_Gift{
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    justify-content: space-between;
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #FFD580; 
+}
+.progressday .streakday{
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.progressday .streakday i{
+    font-size: 1.8rem;
+    margin-right: 0.5rem;
+    color: orange;
+}
+.progressday .Reward_Gift i{
+    font-size: 1.5rem;
+}
+#centrehubContainer{
+    max-height: 80vh;
+    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#centrehubContainer::-webkit-scrollbar-track{
+    width: 0.8rem;
+    border: 1px solid black;
+}
+#centrehubContainer .blog-post, 
+#centrehubContainer .video-post{
+    margin-right: 0.5rem;
+    box-shadow: none; 
+}
+.ProgressData{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+.ProgressMiniCard{
+    Background-color: var(--Substitute);
+    width: 45%;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+}
+.ProgressMiniCard p{
+    text-align: center;
+    margin: 0.2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.CourseSection{
+    place-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.CourseCard{
+    background-color: yellow;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 45%;
+    height: 18rem;
+    border-radius: 0.5rem;
+}
+.CourseImage{
+    width: 95%;
+    height: 70%;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: tomato;
+}
+.CourseCard h3, .CourseCard p{
+    text-align: center;
+    margin: 0.3rem auto;
+}
+.btnTrack a{
+    text-decoration: none;
+}
+/*Edit Container Page*/
+.SectionEditProfile .container{
+    place-items: center;
+    align-self: center;
+    margin: auto;
+}
+.EditContainer{
+    width: 50%;
+    height: 100vh;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: var(--Substitute);
+    border-radius: 9px;
+    align-self: center;
+}
+.EditContainer #changeImage{
+   display: flex;
+   font-size: 1.3rem;
+   justify-content: space-evenly;
+}
+.EditContainer #changeImage a{
+    text-decoration: none;
+    color: navy;
+}
+.hredit{
+    margin: 0.5rem 0;
+    width: 100%;
+}
+.editInput{
+    width: 100%;
+    border-radius: 9px;
+    outline: 0;
+    border: 0px solid black;
+    background-color: var(--Substitute);
+}
+.editBio{
+    min-height: 7rem;
+    height: auto;
+    font-size: 1.1rem;
+    background-color: var(--Secondary);
+}
+.editBio::-webkit-scrollbar{
+    width: 10px;
+    background: var(--Secondary)
+}
+.editUsername{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.editInfo{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.AboutUserContainer{
+    width: 100%;
+}
+.opt{
+    background-color: var(--Secondary);
+    outline: none;
+    font-size: 1.2rem;
+    border-radius: 9px;
+}
+.optInput{
+    background-color: var(--Secondary);
+    outline: none;
+    border: 0px solid black;
+    font-size: 1.2rem;
+    width: 30%;
+    border-radius: 5px;
+}
+.optInput::placeholder{
+    color: black;
+}
+/*Change Image Page*/
+.changeSection .container{
+    min-height: 75vh;
+}
+.changeSection .container form{
+    border: 1px solid black;
+    margin: 0.5rem auto;
+    font-size: 1.5rem;
+    border-radius: 9px;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--Substitute);
+}
+.changeSection .container form input{
+    background-color: var(--Secondary);
+    width: 90%;
+    border-radius: 7px;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 0.2rem;
+}
+.changeSection .container form button{
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 0.2rem;
+    border-radius: 7px;
+}
+/*Home Page*/
+.Section-userHome{
+    min-height: 80vh;
+    height: auto;
+}
+.Section-userHome .container{
+    padding: 0 5rem;
+}
+.btnPost{
+    background-color: var(--Primary);
+    border-radius: 9px;
+    border: 1px solid black;
+    display: flex;
+    padding: 0.5rem;
+    justify-content: space-between;
+    height: 60%;
+    width: 6rem;
+    align-items: center;
+    margin-top: auto;
+    cursor: pointer;
+    margin-bottom: auto;
+}
+.btnPost p, .btnPost i{
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+#circle-user .Logo{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+}
+#circle-user{
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    align-items: center;
+}
+.hmSearch{
+    border-radius: 9px;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 60%;
+    outline: none;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.fa-circle-user{
+    font-size: 2.6rem;
+    padding: 0.7rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    display: flex;
+    cursor: pointer;
+}
+.home-sidebar{
+    display: none;
+    list-style: none;
+    background-color: var(--Substitute);
+    margin: 0 1rem;
+    z-index: 9999;
+    left: -0.5rem;
+    top: 4rem;
+    border-radius: 4px;
+    position: absolute;
+    text-align: left;
+}
+.home-sidebar li{
+    display: block;
+    border-bottom: 1px solid black;
+    padding: 0.3rem 25px;
+}
+.home-sidebar li:first-child{
+    border-top: 1px solid black;
+}
+.home-sidebar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+.SectionPost, #circle-user{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    margin-bottom: 0.5rem;
+}
+.SectionPost.active,
+#circle-user {
+    max-height: 500px; /* or set to something large enough */
+    opacity: 1;
+}
+.SectionPost .container{
+    position: relative;
+}
+.SectionPost .container textarea {
+    display: block;
+    width: 100% !important;
+    resize: vertical;
+    font-size: 1.2rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--Substitute);
+    border: 2px solid var(--Main);
+} 
+.SectionPost .container .inner-post {
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    border: 0px solid sienna;
+    width: 30%;
+    height: 40%;
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+}
+.inner-post .postTags{
+    border: none;
+}
+.inner-post .postTags:hover{
+    background: none;
+}
+.userTagDialog, .hashTagDialog{
+    min-width: 20vw;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 0.5rem 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: fixed;
+    margin-left: 1rem;
+    z-index: 99;
+}
+.dialogHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+.dialogHeader #cancel{
+    font-size: 1.5rem;
+}
+.dialogHeader #cancel:hover{
+    color: red;
+    transition: .1s ease;
+}
+hr{
+    margin: 0.5rem 0;
+    border: 1px solid black;
+    color: black;
+}
+.userTagDialog .usersWrap p{
+    padding: 0 0.5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+.userTagDialog .usersWrap p:nth-child(even){
+    background-color: var(--Secondary);
+}
+.userTagDialog .usersWrap p:hover{
+    transition: .2s ease;
+    background-color: var(--Substitute);
+}
+.userTagDialog .dialogSearch, .dialogSubmit{
+    padding: 0 0.5rem;
+    display: flex; 
+    gap: 0.5rem;
+    flex-direction: column;
+}
+.userTagDialog .dialogSearch input, .dialogSubmit input{
+    height: 1.5rem;
+    font-size: 1.3rem;
+}
+.userTagDialog .dialogSearch button, .dialogSubmit button{
+    font-size: 1.3rem;
+    border: 1px solid black;
+    padding: 0.1rem;
+}
+.SectionPost .container .inner-post i{
+    font-size: 1.6rem;
+}
+.inner-post label > input[type=file]{
+    display: none;
+}
+.inner-post .btnSavePost{
+    font-size: 1rem;
+    width: 20%;
+    height: 100%;
+    border-radius: 0.7rem;
+}
+.blog-post div, .video-post div{
+    padding: 0.5rem; 
+}
+.video-post{
+    margin: 1rem auto;
+    border: 1px solid black;
+    border-radius: 9px;
+    box-shadow: 0.5rem 0.5rem 0.5rem #555;   
+}
+.video-post .display-container{
+    padding: 0 0.5rem;
+}
+.video-post .display-container .userImage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    padding: 0 0.5rem;
+}
+.video-post .display-container .displayer{
+    padding: 0 0.5rem;
+    background: transparent;
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.video-post .display-container .displayer img{
+    position: absolute;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+}
+.video-post div{
+    border: 0px solid black;
+}
+.video-post .post-container{
+    width: 60%;
+}
+.caption-wrap{
+    border: 0px solid hotpink;
+}
+
+.blog-post{
+    min-height: 10vh;
+    margin: 1rem auto;
+    border: 1px solid black;
+    border-radius: 9px;
+    box-shadow: 0.5rem 0.5rem 0.5rem #555;
+}
+.blog-post .caption-wrap, .video-post .caption-wrap{
+    min-height: 8vh;
+    border-bottom: 1px solid black;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
+}
+.blog-post .caption-wrap .caption-captured, .video-post .caption-wrap .caption-captured{
+    display: flex;
+    padding: 0;
+}
+.caption-wrap .caption-captured a {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+.blog-post #trash, .video-post #trash{
+    display: none;
+}
+
+#centrehubContainer .blog-post #trash,
+#centrehubContainer .video-post #trash{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.2rem;
+    border: 0px solid black;
+}
+#centrehubContainer .blog-post #trash:hover,
+#centrehubContainer .video-post #trash:hover{
+    background-color: white;
+    font-size: 1.3rem;
+}
+.blog-post #userName, .blog-post #hashTags, .blog-post .date-time-post,
+.video-post #userName, .video-post #hashTags, .video-post .date-time-post
+,#userTags{
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.blog-post #userName, .video-post #userName{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 0.8rem;
+}
+.blog-post #hashTags, .video-post #hashTags,
+.blog-post #userTags, .video-post #userTags{
+    font-size: 0.8rem;
+    color:gray;
+}
+.video-post .userPost{
+    padding: 0;
+}
+.blog-post .userPost,
+.video-post .userPost{
+    height: auto;
+    font-size: 1.6rem;
+}
+.blog-post .likes-container,
+.video-post .likes-container{
+    min-height: 8vh;
+    display: flex;
+    border-top: 1px solid black;
+    justify-content: space-between;
+}
+.blog-post .likes-container .comment-input,
+.video-post .likes-container .comment-input{
+    min-width: 30vw;
+    padding: 0 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-post .comment-input input,
+.video-post .comment-input input{
+    width: 70%;
+    border-radius: 6px;
+    font-size: 1rem;
+    border: 0px solid black;
+}
+.comment-input button{
+    width: 30%;
+    border-radius: 11px;
+    background-color: white;
+    border: 0px solid black;
+}
+#backspan{
+    font-size: 1.3rem;
+}
+.blog-post .likes-container .likes-wrapper,
+.video-post .likes-container .likes-wrapper{
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.blog-post .likes-container .likes-wrapper button:first-child,
+.video-post .likes-container .likes-wrapper button:first-child{
+    display: flex;
+    height: 100%;
+    width: auto;   
+    justify-content: space-between;
+    border: 0px solid black;
+}
+.likes-container .likes-wrapper button,
+.likes-container .likes-wrapper span{
+    display: flex;
+    height: 100%;
+    width: 17%;
+    background-color: white;
+    justify-content: space-between;
+    border: 0px solid black;
+}
+.likes-container .likes-wrapper button i,
+.likes-container .likes-wrapper span i
+{
+    font-size: 1.3rem;
+}
+.likes-container .likes-wrapper button p,
+.likes-container .likes-wrapper span p{
+    font-weight: 400;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+/*Delete Page*/
+#sectionDelete{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 99;
+    background-color: #000000aa;
+}
+#sectionDelete #formDelete .video-post, #sectionDelete #formDelete .blog-post, .deleteCard{
+    width: 100%;
+}
+#formDelete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 9px;
+    border: 1px solid black;
+    height: 80%;
+    padding: 0.5rem;
+    width: 70%;
+    background-color: white;
+    margin: 0.8rem auto;   
+}
+.deleteCard{
+    background-color: var(--Substitute);
+    border: 1px solid black;
+    border-radius: 9px;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+}
+.deleteCard .deleteButtons{
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    height: 2rem;
+}
+.deleteCard .deleteButtons #delete,.deleteCard .deleteButtons a .cancelDelete{
+    border: 1px solid black;
+    margin: 0 0.5rem;
+    border-radius: 7px;
+    padding: 0.2rem;
+    height: 100%;
+}
+.deleteCard .deleteButtons #delete:hover{
+    background-color: tomato;
+    cursor: pointer;
+    font-size: 1.15rem;
+}
+.deleteCard .deleteButtons a .cancelDelete:hover{
+    background-color: white;
+    font-size: 1.2rem;
+}
+/*Inbox page*/
+.inboxSection{
+    min-height: 80vh;
+    height: auto;
+}
+.inboxSection .container{
+    padding: 0 5rem;
+    margin-bottom: 0.5rem;
+}
+.InboxContainer{
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+    border: 1px solid black;
+    height: auto;
+    width: 80%;
+    margin: 0.8rem auto;
+}
+.InboxContainer h1{
+    padding: 0.5rem;
+}
+.InboxContainer #inboxMessage{
+     padding: 0.5rem;
+    border-top: 1px solid black;
+    width: 100%;
+}
+.InboxContainer #inboxMessage .InboxTop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#inboxName{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.2rem 0;
+}
+#inboxDate{
+    font-size: 1.2rem;
+    color: gray;
+    margin: 0.2rem 0;
+}
+#inboxMessage #messageContent{
+    font-size: 1.1rem;
+    margin: 0.2rem 0;
+    word-wrap: break-word;
+}
+.InboxBottom{
+    display: none;
+}
+#Promoted{
+    color: red;
+}
+/*Search Page*/
+.getClient{
+    border: 1px solid black;
+    margin: 1rem 0;
+    min-height: 3rem;
+    display: flex;
+    position: relative;
+    z-index: 10;
+    border-radius: 11px;
+    box-shadow: 0.5rem 0.5rem 0.5rem #555;
+}
+.nvTop{
+    display: flex;
+}
+.getClient label{
+    font-size: 2rem;
+}
+.searchPic{
+    width: 10rem;
+    height: 9rem;
+    display: flex;
+    justify-self: flex-start;
+    margin: 0.2rem 0.5rem;
+}
+.searchPic img{
+    position: relative;
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.slocation{
+    display: flex;
+    justify-content: space-between;
+    max-width: 12rem;
+    width: auto;
+}
+.slocation p{
+    margin-right: 0.2rem;
+}
+.ClientMiddle{
+    width: 60vw; 
+}
+.ClientMiddle i {
+    margin-right: 0.3rem;
+}
+.ClientMiddle a{
+    cursor: pointer;
+}
+.ClientMiddle .bioStatement{
+    word-wrap: break-word;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+.clientMiddle hr{
+    margin: 0.2rem 0;
+    width: 98%;
+}
+#btnFFSearch{
+    display: flex;
+    margin: 0 0.5rem;
+    height: 100%;
+    width: auto;
+    padding: 0.2rem 0;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+#btnFFSearch button{
+    width: 10rem;
+    height: 30%;
+    float: right;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 5px;
+}
+#btnFFSearch button:hover{
+    background-color: var(--Substitute);
+}
+/*Wallet Page*/
+.WalletSection .container{
+    padding: 0 5rem;
+    margin-bottom: 0.5rem;
+}
+/*Leaderboard page*/
+.LeaderboardSection .container{
+    padding: 0 5rem;
+    margin-bottom: 0.5rem;;
+}
+.leaderboard-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.leaderboard-content #leaderboarduser{
+    display: flex;
+    border: 2px solid black;
+    margin: 0.5rem 0;
+    width: 100%;    
+    justify-content: space-between;
+    padding: 0.5rem;
+    border-radius: 9px;
+    box-shadow: 0.5rem 0.5rem 0.5rem #555;
+}
+.leaderboardPic{
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    justify-self: flex-start;
+    margin: 0.2rem 0.5rem;  
+}
+.leaderboardPic img{
+    position: relative;
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+.leaderboard-content #leaderboarduser h2{
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    font-size: 6rem;
+}
+.leaderboard-content #leaderboarduser .userInfo{
+    display: inline-flex;
+    flex-direction: row;
+    width: 80%;
+    border: 0px solid black;
+}
+.leaderboard-content #leaderboarduser .leaderboardUserInfo p{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+}
+.leaderboard-content #leaderboarduser .leaderboardUserInfo p:first-child{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.leaderboard-content #leaderboarduser .leaderboardBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px solid black;
+    min-height: 100%;
+    justify-self: flex-end;
+}
+.leaderboard-content #leaderboarduser .leaderboardBtn a button{
+    border: 1px solid black;
+    font-size: 1.5rem;
+    margin: auto 0;
+    min-height: 3rem;
+    padding: 0.2rem;
+    border-radius: 7px;
+}  
+
+@media (max-width: 1280px){
+    .progressday .streakday{
+        width: 20%;
+    }
+    .home-sidebar{
+        left: 7rem;
+    }
+    .video-post .display-container .displayer{
+        width: 90%;
+    }
+}
+@media (max-width: 1024px){
+    .progressday .streakday{
+        width: 30%;
+    }
+    .Profile_Wrap .container{
+        height: auto;
+    }
+    /*Home page*/
+    #centrehubContainer .blog-post .likes-container, #centrehubContainer .video-post .likes-container{
+        display: inherit;
+    }
+    #centrehubContainer .blog-post .likes-container .comment-input, 
+    #centrehubContainer .video-post .likes-container .comment-input
+    {
+        min-height: 5vh;
+    }
+    .Tabs_Option{
+        width: 50%;
+    }
+    .ClientMiddle{
+        width: 38vw;
+    }
+}
+@media (max-width: 768px){
+    .FeedbackSection .container{
+        padding: 0 0.5rem;
+    }
+    .FeedbackSection .container .feedbackCard{
+        width: 100%;
+    }
+    .SettingContainer .Logo, .SettingLast div{
+        width: 20%;
+    }
+    .AboutUserContainer, .FollowContainer, .ProgressData, .CourseSection{
+        width: 100%;
+    }
+    .JobForHireContainer{
+        display: none;
+    }
+    .CentreHubContainer{
+        display: contents;
+    }
+    .hmSearch{
+        width: 50%;
+    }
+    .home-sidebar{
+        left: 5rem
+    }
+    /*UserHome*/
+    .Section-userHome .container, .InboxSection .container{
+        padding: 0;
+    }
+    .ClientMiddle{
+        width: 35vw;
+    }
+    .leaderboard-content #leaderboarduser .UserInfo{
+        display:flex;
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+    .leaderboardBtn{
+       min-width: 100%;
+       border: 2px solid black;
+    }
+    .leaderboard-content #leaderboarduser .leaderboardUserInfo{
+        border: 0px solid black;
+    }
+    .leaderboard-content #leaderboarduser .leaderboardBtn a button{
+        min-width: 15rem;
+    }
+    .leaderboard-content #leaderboarduser{
+        flex-direction: column;
+        align-items: center;
+    }
+    #sidebar{
+        display: none;
+    }
+}
+@media (max-width: 648px){
+    .ProgressMiniCard p:first-child{
+        font-size: 1rem;
+    }
+    .ProgressMiniCard p{
+        font-size: 0.8rem;
+    }
+    .BioContainer .pfpBox{
+        width: 35%;
+    }
+    .progressday .streakday{
+        width: 45%;
+        
+    }
+    .cardpadding{
+        padding: 0 1rem;
+    }
+    #xp{
+        display: none;
+    }
+    /*UserHome*/
+    .blog-post .likes-container,
+    .video-post .likes-container
+    {
+        display: inherit;
+    }
+    .blog-post .likes-container .comment-input,
+    .video-post .likes-container .comment-input{
+        border-top: 2px solid black;
+        min-height: 5vh;
+    }
+    .Profile_Wrap .container{
+        display: inherit;
+        height: auto;
+    }
+    .BioContainer, .ProgressContainer{
+        width: 100%;
+        height: auto;
+        border: 0px solid black;
+    }
+    .video-post .display-container{
+        padding: 0;
+    }
+    .video-post .display-container .displayer{
+        width: 100%;
+    }
+    .getClient{
+        flex-direction: column;
+    }
+    .getClient .ClientMiddle{
+        width: 100%;
+    }
+    #btnFFSearch{
+        position: static;
+        margin: 0;
+        height: 3rem;
+        justify-content: center;
+    }
+    #btnFFSearch button{
+        height: 100%;
+        margin: 0 auto;
+        width: 20rem;
+    }
+    .LeaderboardSection .container, .inboxSection .container{
+        padding: 0 1rem;
+    }
+}
+@media (max-width: 475px){
+     .FollowContainer{
+        flex-wrap: nowrap;
+    }
+    .LevelStats {
+        justify-content: space-between;
+    }
+    .LevelStats p:first-child{
+       visibility: hidden;
+    }
+    .LevelStats progress{
+        height: 60%;
+        align-items: right;
+        place-items: right;
+    }
+    .BioContainer .pfpBox{
+        width: 30%;
+    }
+    .atUsername, .settinglast div i{
+        font-size: 1.2rem;
+    }
+    .FollowCard b{
+        font-size: 0.8rem;
+    }
+    .FollowCard p {
+        font-size: 0.7rem;
+    }
+    .BioContainer .pfpBox img{
+        height: 80%;
+    }
+    .progressday .streakday{
+        width: 60%;
+    }
+    .progressday .Reward_Gift{
+        width: 15%;
+    }
+    .Reward_Gift p, .MissionImage{
+        display: none;
+    }
+    /*Profile*/
+    .zin{
+        display: inherit;
+    }
+    .opt, .optInput{
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+    #circle-user .home-sidebar{
+        margin: 0;
+    }
+    .blog-post,
+    .video-post{
+        margin: 0.5rem;
+    }
+    .blog-post .caption-wrap,
+    .video-post .caption-wrap{
+        padding: 0;
+    }
+    #btnFFSearch button{
+        width: 15rem;
+    }
+    .leaderboard-content #leaderboarduser .leaderboardUserInfo p:first-child{
+        font-size: 1.5rem;
+    }
+    .clientHeader .container form{
+        display: none;
+    }
+}
+@media (max-width: 340px){
+    .leaderboardPic{
+        display: none;
+    }    
+    .InboxContainer, .EditContainer{
+        width: 100%;
+    }
+}

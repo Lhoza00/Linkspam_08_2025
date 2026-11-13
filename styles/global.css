@@ -1,0 +1,269 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    max-width: 100dvw;
+}
+hr{
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+input, textarea{ 
+    padding: 0 0.5rem;
+    outline: none;
+}
+p, h1,h2,h3:hover{
+    cursor: default;
+}
+button, i:hover{
+    cursor: pointer;
+}
+:root{
+    --Main: #FF6E00;
+    --Primary: #FFFFFF;
+    --Secondary: #EAE6e0;
+    --Substitute: #FFA74F;
+    --Tertiary: #FFFFFF;
+}
+header, footer{
+    z-index: 10;
+    background-color: var(--Main);
+}
+.hero , .benefits_section, .BenefitContainer, .section_contact, .News, .SignBG,
+.SectionBio, .sectonWhoWeAre, .sectionMission, .sectionHowWeOperate {
+    background-color: var(--Primary);
+}
+.section_services, #secondBenefitContainer , 
+ .Centrehub, .sectionAboutContact  {
+    background-color: var(--Secondary);
+}
+button{
+    background-color: var(--Tertiary);
+    border: 2px solid black;
+    font-weight: 600;
+}
+button:hover{
+    background-color: var(--Main);
+    font-weight: 600;
+    transition: ease-in;
+    font-size: 1.05rem;
+}
+.PaymentCard, .LoginSection .container .card, .SignSection .container .card, .OfferPrice, .cardContact, .backgroundcard{
+    background-color: #FFA74F;
+    border: 1px solid black;
+}
+header .container{
+    position: sticky;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    justify-content: space-between;
+    align-items: center;  
+}
+.Logo{
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    padding-right: 200px;
+}
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    color: black;
+}
+#menu-btn{
+    font-size: 35px;
+    display: none;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+.navbar a:hover:before {
+    width: 100%
+}
+.mini-navbar{
+    display: none;
+    list-style: none;
+    background-color: var(--Substitute);
+    margin: 0 1.5rem;
+    z-index: 9995;
+    right: 0%;
+    top: 75%;
+    border-radius: 4px;
+    position: absolute;
+    text-align: right;
+}
+.mini-navbar li{
+    display: block;
+    border-bottom: 1px solid black;
+    padding: 0.3rem 25px;
+}
+.mini-navbar li:first-child{
+    border-top: 1px solid black;
+}
+.mini-navbar li a{
+    text-decoration: none;
+    color: black;   
+    font-size: 1.5rem;
+}
+.container{
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 0px solid black;
+} 
+/*Footer Page*/
+footer{
+    min-height: 15vh;
+    margin-top: 0rem;
+}
+footer .container hr{
+    border: 1px solid black;
+}
+.topfooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.socials{
+    font-size: 1.7rem;
+    padding-top: 7px;   
+}
+.socials i{
+    padding: 0 9px;
+}
+.socials a{
+    color: black;
+    text-decoration: none;
+}
+.footlinks{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#T_C{
+    display: flex;
+    justify-content: space-between;
+    width: 19vw;
+}
+#T_C a{
+    text-decoration: none;
+    color: black;
+}
+/*PolicyMaker Page*/
+.SectionPrivacyPolicy .Container, 
+.SectionTermsCondition .Container,
+.SectionDisclosure .container{
+    border: none;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+   /*comment*/
+}
+.PolicyMakerHeader{
+    background-color: var(--Main);
+    border-bottom: 3px solid black;
+    height: 10vh;
+}
+.PolicyMakerHeader .container{
+    border: none;
+    height: 10vh;
+}
+.PolicyMakerHeader .container .Logo{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    place-items: center;   
+}
+/*Media Queries*/
+@media (max-width: 1536px) {
+    .container{
+        max-width: 1280px;
+    }
+    .PolicyMakerHeader .container .Logo{
+        padding: 0 3rem;
+    }
+}
+@media (max-width: 1280px) {
+    .container{
+        max-width: 1024px;
+    }
+}
+@media (max-width: 1024px) {
+    .container{
+        max-width: 768px;
+    }
+    #T_C{
+        width: 30vw;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        max-width: 648px;
+        padding: 0 0.5rem;
+    }   
+    #menu-btn{
+        display: block;
+        padding-right: 14px;
+    }
+}
+@media (max-width: 648px) {
+    .container{
+        max-width: 475px;
+    }
+    #T_C{
+        width: 50vw;
+    }   
+    header .container .LevelStats progress, #quota{
+        display: none;
+    }
+    .fdInput{
+        padding: 1rem;
+    }
+}
+@media (max-width: 475px) {
+    .container{
+        width: 340px;
+    }
+    .footlinks{
+        display: contents;
+    }
+    #T_C{
+        width: 100%;
+    }   
+}
+@media (max-width: 340px) {
+    .container{
+        width:100%;
+    }
+} 
